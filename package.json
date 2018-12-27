@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
@@ -32,6 +33,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-markdown": "^4.0.4",
+    "react-router-dom": "^4.3.1",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.2",
