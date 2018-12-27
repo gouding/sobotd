@@ -1,2 +1,2 @@
 # sobotd
-[在线示例](http://sobot.com)
+[在线示例](https://gouding.github.io/sobotd/)
