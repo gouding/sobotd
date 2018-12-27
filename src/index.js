@@ -1,11 +1,15 @@
-import React from 'react';
-import './index.css'
+import { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn } from './ZcButton';
 
-const MyComponent = () => (
-  <div>
-    <span className={"text"}>hello myComponent</span>
-    <span className={"bg"}></span>
-  </div>
-)
-
-export default MyComponent;
+export {
+  ZcBtn,
+  ZcDelBtn,
+  ZcTimeBtn,
+  ZcEditBtn,
+  ZcMoveBtn,
+  ZcOpenBtn,
+  ZcAddBtn,
+  ZcStopBtn,
+  ZcCancleBtn,
+  ZcTextBtn,
+  ZcDownloadBtn,
+}

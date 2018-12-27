@@ -1,0 +1,28 @@
+.wrap {
+  padding: 20px;
+}
+
+.wrap .title {
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.wrap button{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.codeBox {
+  border: 1px solid #e1e6f5;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #666;
+  background-color: #f5f5f5;
+}
+
+.tempBox {
+  font-size: 14px;
+  padding: 9px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e1e6f5;
+}

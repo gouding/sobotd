@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDom, { render } from 'react-dom';
-import MyComponent from '../../src';
+import ZcButton from './button'
+
 
 const App = () => (
-  <MyComponent />
+  <>
+    <ZcButton />
+  </>
+
 )
 
 render(<App />, document.getElementById('root'));
