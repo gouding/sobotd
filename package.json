@@ -1,6 +1,6 @@
 {
   "name": "sobotd",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "dist/index",
   "typings": "dist/index",
   "license": "MIT",
@@ -8,9 +8,9 @@
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "yarn transpile",
-    "build":"webpack --mode production",
-    "deploy":"gh-pages -d examples/dist",
-    "publish-demo":"yarn build && yarn deploy"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "yarn build && yarn deploy"
   },
   "author": "denzel",
   "peerDependencies": {
@@ -31,6 +31,7 @@
     "less-loader": "^4.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-markdown": "^4.0.4",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.2",
