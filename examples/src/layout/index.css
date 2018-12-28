@@ -28,10 +28,12 @@ body {
   float: right;
   list-style: none;
 }
-.example-wrap .header ul li a{
+
+.example-wrap .header ul li a {
   text-decoration: none;
-  color:#6d7894;
+  color: #6d7894;
 }
+
 .example-wrap .header ul li {
   display: inline-block;
   margin-right: 20px;
@@ -67,21 +69,36 @@ body {
   padding: 0;
 }
 
+.example-wrap .content .menu ul li a {
+  text-decoration: none;
+  color: #6d7894;
+  display: inline-block;
+  width: 100%;
+  margin-left: 20px;
+}
+
 .example-wrap .content .menu ul li {
   list-style: none;
   line-height: 40px;
   height: 40px;
   margin-bottom: 8px;
-  text-indent: 20px;
+  font-size: 14px;
+  width: 270px;
 }
 
 .example-wrap .content .menu ul li:hover {
-  color: #09aeb0;
   cursor: pointer;
-  background: #e6f7ff;
+  /* background: #f0f3fb; */
 }
 
-.example-wrap .content .menu ul li:active {
-  background: #e6f7ff;
-  color: #09aeb0;
+.example-wrap .content .menu ul li:hover a {
+  color: #0DAEAF;
+}
+
+.example-wrap .content .menu ul li.active {
+  background: #f0f3fb;
+}
+
+.example-wrap .content .menu ul li.active a {
+  color: #0DAEAF;
 }

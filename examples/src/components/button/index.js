@@ -1,11 +1,11 @@
-import { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn } from '../../../src/';
+import { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn } from '../../../../src/';
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
 import './index.css'
 const onTouch = (e) => {
   alert(e.target.textContent);
 }
-const BtnDemo = () => {
+const BtnDemo = (props) => {
   const md = 
   `
   ####  引入：import {ZcBtn} from 'sobotd'
