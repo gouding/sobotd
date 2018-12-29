@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
+import styles from './index.less'
 //菜单
 const menus = [
   { name: 'Button 按钮', id: '001', path: '/button', active: false },
@@ -19,17 +20,16 @@ const Menu = () => {
   const hash = window.location.hash.substr(1);
   onSwitch(hash);
   return (
-    <div className="menu">
+    <div className={styles.menu}>
       <ul>
         {
           menus.map(item => (
-            <li key={item.id} className={item.active ? 'active' : ''}>
+            <li key={item.id} className={item.active ? styles.active : ''}>
               <Link to={item.path} >{item.name}</Link>
             </li>
           ))
         }
       </ul>
-      <Route />
     </div>
   )
 }

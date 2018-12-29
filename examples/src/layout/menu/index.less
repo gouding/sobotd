@@ -1,0 +1,35 @@
+.menu {
+  width: 270px;
+  border-right: 1px solid #ddd;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      line-height: 40px;
+      height: 40px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      width: 270px;
+      &.active {
+        background: #f0f3fb;
+        a {
+          color: #0DAEAF;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        a {
+          color: #0DAEAF;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #6d7894;
+        display: inline-block;
+        width: 100%;
+        margin-left: 20px;
+      }
+    }
+  }
+}
