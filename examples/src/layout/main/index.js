@@ -1,17 +1,20 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-
-import ZcButton from '../../components/button'
-import ZcInput from '../../components/input'
-import ZcIndex from '../../components/index'
+import router from '../router'
 import styles from './index.less'
+import ZcIndex from '../../components/index'
 
+
+const onRoute = () => {
+  return router.map((item, i) => (
+    <Route key={i} path={item.path} component={item.component} />
+  ))
+}
 const Main = () => (
   <div className={styles.main}>
     <Switch>
       <Route exact path="/" component={ZcIndex} />
-      <Route path="/button" component={ZcButton} />
-      <Route path="/input" component={ZcInput} />
+      {onRoute()}
     </Switch>
   </div>
 )
