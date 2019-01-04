@@ -1,3 +1,4 @@
+import './global.less'
 import {
   ZcBtn,
   ZcDelBtn,
@@ -22,6 +23,20 @@ import ZcRadio from './ZcRadio'
 import ZcSwitch from './ZcSwitch'
 //ZcDrawer 
 import ZcDrawer from './ZcDrawer'
+//ZcModal 
+import ZcModal, { ZcSuccess, ZcWarning, ZcError, ZcAlert } from './ZcModal'
+ZcModal.success = ZcSuccess;
+ZcModal.warning = ZcWarning;
+ZcModal.error = ZcError;
+ZcModal.alert = ZcAlert;
+//ZcTabs
+import ZcTabs from './ZcTabs'
+//ZcTable
+import ZcTable from './ZcTable'
+//ZcSelect 
+import ZcSelect from './ZcSelect'
+//ZcDateTime
+import ZcDateTime from './ZcDateTime'
 export {
   ZcBtn,
   ZcDelBtn,
@@ -39,4 +54,9 @@ export {
   ZcRadio,
   ZcSwitch,
   ZcDrawer,
+  ZcModal,
+  ZcTabs,
+  ZcTable,
+  ZcSelect,
+  ZcDateTime,
 }

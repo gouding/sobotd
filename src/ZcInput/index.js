@@ -3,7 +3,7 @@ import ZInput from './input'
 import ZSearch from './search'
 import ZSelect from './select'
 import ZTextarea from './textarea'
-
+import './index.less'
 const ZcInput = (props) => {
   const { status } = props;
 

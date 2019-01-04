@@ -25,6 +25,7 @@ const ZRadio = () => {
   ]
   const defaultValue = 2;
   const md = `
+    //注：有回调输出时可查看console控制台
   ####  引入：import {ZcRadio} from 'sobotd'
   const data = [\n
       {

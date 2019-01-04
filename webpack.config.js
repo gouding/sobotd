@@ -55,6 +55,8 @@ module.exports = {
             "success-color":"#0DAEAF",
             "font-size-base":"14px",
             "border-radius-base":"0",
+            // "warning-color": "#BF862D",
+            "error-color":"#f9676f",
           },
           javascriptEnabled: true,
         }

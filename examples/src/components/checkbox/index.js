@@ -43,6 +43,7 @@ const ZCheckbox = (props) => {
     console.log(uuId,type,data);
   }
   const md = `
+    //注：有回调输出时可查看console控制台
   ####  引入：import {ZcCheckbox} from 'sobotd'
   
    <ZcCheckbox \n

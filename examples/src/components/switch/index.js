@@ -8,6 +8,7 @@ export default function () {
     console.log(uuId, data)
   }
   const md = `
+    //注：有回调输出时可查看console控制台
   ####  引入：import {ZcSwitch} from 'sobotd'
   <ZcSwitch\n
       size='small'  //默认为default或不用设置  可选值 small 表示小号开关

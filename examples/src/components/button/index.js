@@ -8,6 +8,7 @@ const onTouch = (e) => {
 const BtnDemo = (props) => {
   const md =
     `
+    //注：有回调输出时可查看console控制台
   ####  引入：import {ZcBtn} from 'sobotd'
   <ZcBtn type='o' title='一般按钮' handler={onTouch} 
   /> \n

@@ -20,6 +20,7 @@ export default class ZDrawer extends PureComponent {
   render() {
     const { visible } = this.state;
     const md = `
+      //注：有回调输出时可查看console控制台
    ####  引入：import {ZcDrawer} from 'sobotd'
    state = {\n
       visible: false,

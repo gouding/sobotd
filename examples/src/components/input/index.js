@@ -10,6 +10,7 @@ const onChange = ({ uuId, data }) => {
 }
 const md =
   `
+    //注：有回调输出时可查看console控制台
   ####  引入：import {ZcBtn} from 'sobotd'
   
   <ZcInput \n
@@ -38,7 +39,7 @@ const InputDemo = () => (
       <ZcInput
         size='default'
         placeholder={'请输入'}
-        defaultValue={1}
+        defaultValue=''
         handler={onChange}
         style={{ color: 'red' }}
         disabled={false}
@@ -96,7 +97,7 @@ const InputDemo = () => (
         <ZcInput
           size='default'
           placeholder={'请输入'}
-          defaultValue={'2'}
+          defaultValue=''
           handler={onChange}
           disabled={false}
           uuId={'id4'}

@@ -3,13 +3,14 @@ import React from 'react'
 //普通的按钮
 const ZcBtn = (props) => {
   //type o 表示实心 有底色  默为是无底色
-  const { type, size = 'small', title = '确定', handler, } = props;
+  const { type, size = 'small', title = '确定', handler, width = 80 } = props;
   const fn = e => {
     handler && handler(e);
   }
   return (
     <button type="button"
       onClick={fn}
+      style={{ minWidth: width }}
       className={`${size === 'small' ? styles.small : size === 'default' ? styles.default : styles.large} ${type === 'o' ? styles.o : ''} ${styles.zcJBtn} `} name="button">{title}</button>
   )
 }
@@ -126,8 +127,8 @@ const ZcAddBtn = (props) => {
   )
 }
 
-const ZcDownloadBtn =(props)=>{
-  const {title='下载',handler}=props;
+const ZcDownloadBtn = (props) => {
+  const { title = '下载', handler } = props;
   const fn = e => {
     handler && handler(e);
   }
@@ -140,4 +141,4 @@ const ZcDownloadBtn =(props)=>{
 
 
 
-export { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn,ZcTextBtn,ZcDownloadBtn };
+export { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn };
