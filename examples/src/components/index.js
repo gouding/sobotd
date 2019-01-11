@@ -35,6 +35,10 @@ export default class ZIndex extends PureComponent {
         <div style={box}>
           <Timeline>
             <Timeline.Item>
+            2019-01-11 sobotd v1.2.2 修复组件加载不了内部的less文件，采用loader加载为module:true的模式，在第三方引用时，不能正常加载样式名，
+            即使用正常的样式加载即可
+            </Timeline.Item>
+            <Timeline.Item>
               <div>
                 2019-01-04 组件库完成v1.0版本的开发，可用于项目中进行正常使用。
           <p>
