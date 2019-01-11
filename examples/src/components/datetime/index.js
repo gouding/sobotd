@@ -1,6 +1,6 @@
 import React from 'react'
 import { ZcDateTime } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 export default () => {
   const onChange = ({ uuId, data }) => {
@@ -20,8 +20,8 @@ export default () => {
     />
   `
   return (
-    <div>
-      <div className={styles.prview}>
+    <div className='container'>
+      <div className='prview'>
         <ZcDateTime
           handler={onChange}
           zcShowTime={false}
@@ -29,7 +29,7 @@ export default () => {
           zcPickerModel={'range'}
         />
       </div>
-      <div className={styles.codeBox}>
+      <div className='codeBox'>
         <ReactMarkdown source={md} />
       </div>
     </div>

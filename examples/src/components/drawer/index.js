@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { ZcDrawer, ZcBtn } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 export default class ZDrawer extends PureComponent {
   state = {
@@ -51,9 +51,9 @@ export default class ZDrawer extends PureComponent {
     </ZcDrawer>
    `
     return (
-      <div>
-        <div className={styles.wrap}>
-          <ZcBtn title='确定' handler={this.onChange} />
+      <div className='container'>
+        <div className='preview'>
+          <ZcBtn title='打开弹层' handler={this.onChange} />
           <ZcDrawer
             visible={visible}
             width={900}
@@ -67,7 +67,7 @@ export default class ZDrawer extends PureComponent {
             <div style={{ background: '#fff', height: 200, padding: 20 }}>这里是子组件</div>
           </ZcDrawer>
         </div>
-        <div className={styles.codeBox}>
+        <div className='codeBox'>
           <ReactMarkdown source={md} />
         </div>
       </div>

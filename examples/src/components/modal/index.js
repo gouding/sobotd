@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { ZcModal, ZcBtn } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 const { alert } = ZcModal;
 export default class ZModal extends PureComponent {
@@ -135,17 +135,17 @@ export default class ZModal extends PureComponent {
       <ZcBtn title='alert弹层 error提示' handler={this.alertForError} />
     `
     return (
-      <div>
-        <div className={styles.preview}>
-          <div className={styles.box}>
+      <div className='container'>
+        <div className='preview'>
+          <div className='box'>
             <ZcBtn title='modal弹层' handler={this.onChange} />
           </div>
-          <div className={styles.box}>
+          <div className='box'>
             <ZcBtn title='modal弹层 success提示' handler={() => { this.onInfoChange('success') }} />
             <ZcBtn title='modal弹层 waring提示' handler={() => { this.onInfoChange('warning') }} />
             <ZcBtn title='modal弹层 error提示' handler={() => { this.onInfoChange('error') }} />
           </div>
-          <div className={styles.box}>
+          <div className='box'>
             <ZcBtn title='alert弹层 success提示' handler={this.alertForSuccess} />
             <ZcBtn title='alert弹层 waring提示' handler={this.alertForWaring} />
             <ZcBtn title='alert弹层 error提示' handler={this.alertForError} />
@@ -159,7 +159,7 @@ export default class ZModal extends PureComponent {
             <div>这是子组件</div>
           </ZcModal>
         </div>
-        <div className={styles.codeBox}>
+        <div className='codeBox'>
           <ReactMarkdown source={md} />
         </div>
       </div>

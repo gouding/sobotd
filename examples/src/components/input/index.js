@@ -1,7 +1,7 @@
 import React from 'react'
 import { ZcInput } from '../../../../src'
 import ReactMarkdown from 'react-markdown'
-import styles from './index.less'
+import styles from '../components.less'
 const inputChange = (e) => {
   console.log(e.target.value)
 }
@@ -34,8 +34,8 @@ const md =
   }
   `;
 const InputDemo = () => (
-  <div>
-    <div className={styles.preview}>
+  <div className='container'> 
+    <div className='preview'>
       <ZcInput
         size='default'
         placeholder={'请输入'}
@@ -108,7 +108,7 @@ const InputDemo = () => (
         ></ZcInput>
       </div>
     </div>
-    <div className={styles.codeBox}>
+    <div className='codeBox'>
       <ReactMarkdown source={md} />
     </div>
   </div>

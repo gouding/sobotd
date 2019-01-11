@@ -7,11 +7,11 @@ import styles from './index.less'
 
 const Layout = () => {
   return (
-    <div className={styles.wrap}>
-      <div className={styles.header}>
+    <div className={'wrap'}>
+      <div className={'header'}>
         <Header />
       </div>
-      <div className={styles.content}>
+      <div className={'content'}>
         <Menu />
         <Main />
       </div>

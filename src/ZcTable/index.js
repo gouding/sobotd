@@ -44,7 +44,7 @@ export default (props) => {
       <LocaleProvider locale={zhCN}>
         <div className={'zc-scroll-bar'}>
           <Table {...params} />
-          <div className={styles.pagination}>
+          <div className={'pagination'}>
             <Pagination
               showQuickJumper
               hideOnSinglePage={hideOnSinglePage}

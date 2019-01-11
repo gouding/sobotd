@@ -30,7 +30,7 @@ export default class ZcDrawer extends PureComponent {
           closable={closable}
           maskStyle={maskStyle}
           zIndex={zIndex}
-          className={styles.zcLayerMask}
+          className={'zcLayerMask'}
         >
           {children}
         </Drawer>

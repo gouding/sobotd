@@ -12,11 +12,11 @@ const Menu = () => {
   const hash = window.location.hash.substr(1);
   onSwitch(hash);
   return (
-    <div className={styles.menu}>
+    <div className={'menu'}>
       <ul>
         {
           router.map(item => (
-            <li key={item.id} className={item.active ? styles.active : ''}>
+            <li key={item.id} className={item.active ? 'active' : ''}>
               <Link to={item.path} >{item.name}</Link>
             </li>
           ))

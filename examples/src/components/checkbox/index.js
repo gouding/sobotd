@@ -1,36 +1,36 @@
 import React from 'react'
 import { ZcCheckbox } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 
 const FieldsCheckbox = ZcCheckbox.FieldsCheckbox;
 
 const ZCheckbox = (props) => {
-  const fieldItems=[
+  const fieldItems = [
     {
       name: 'item1',
       value: 'val1',
       checked: false,
       disabled: false,
-      default:false,
+      default: false,
       sortFlag: true,
       sortName: 'val1',
       sortType: ''
-    },{
+    }, {
       name: 'item2',
       value: 'val2',
       checked: true,
       disabled: false,
-      default:true,
+      default: true,
       sortFlag: true,
       sortName: 'val2',
       sortType: ''
-    },{
+    }, {
       name: 'item3',
       value: 'val3',
       checked: true,
       disabled: true,
-      default:true,
+      default: true,
       sortFlag: true,
       sortName: 'val3',
       sortType: ''
@@ -39,8 +39,8 @@ const ZCheckbox = (props) => {
   const onChecked = ({ uuId, data }) => {
     console.log(uuId, data)
   }
-  const onFieldsChecked=({uuId,type,data})=>{
-    console.log(uuId,type,data);
+  const onFieldsChecked = ({ uuId, type, data }) => {
+    console.log(uuId, type, data);
   }
   const md = `
     //注：有回调输出时可查看console控制台
@@ -89,8 +89,8 @@ const ZCheckbox = (props) => {
   />
   `
   return (
-    <div >
-      <div className={styles.wrap}>
+    <div className={'container'}>
+      <div className={'preview'}>
         <ZcCheckbox
           uuId='id1'
           defaultChecked={true}
@@ -98,7 +98,7 @@ const ZCheckbox = (props) => {
           disabled={false}
           handler={onChecked}
         />
-         <ZcCheckbox
+        <ZcCheckbox
           uuId='id2'
           defaultChecked={false}
           title='选项二'
@@ -120,14 +120,14 @@ const ZCheckbox = (props) => {
           handler={onChecked}
         />
         <div>
-            <FieldsCheckbox 
-              data={fieldItems}
-              uuId={'field'}
-              handler={onFieldsChecked}
-            />
+          <FieldsCheckbox
+            data={fieldItems}
+            uuId={'field'}
+            handler={onFieldsChecked}
+          />
         </div>
       </div>
-      <div className={styles.codeBox}>
+      <div className='codeBox'>
         <ReactMarkdown source={md} />
       </div>
     </div>

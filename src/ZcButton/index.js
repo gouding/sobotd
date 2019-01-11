@@ -11,7 +11,7 @@ const ZcBtn = (props) => {
     <button type="button"
       onClick={fn}
       style={{ minWidth: width }}
-      className={`${size === 'small' ? styles.small : size === 'default' ? styles.default : styles.large} ${type === 'o' ? styles.o : ''} ${styles.zcJBtn} `} name="button">{title}</button>
+      className={`${size === 'small' ? 'small' : size === 'default' ? 'default' : 'large'} ${type === 'o' ? 'o' : ''} zcJBtn`} name="button">{title}</button>
   )
 }
 
@@ -25,7 +25,7 @@ const ZcTextBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${size === 'small' ? styles.small : size === 'default' ? styles.default : styles.large} ${styles.btnTextCancel} `} name="button">{title}</button>
+      className={`zcJBtn btnTextCancel ${size === 'small' ? 'small' : size === 'default' ? 'default' : 'large'}  `} name="button">{title}</button>
   )
 }
 
@@ -39,7 +39,7 @@ const ZcDelBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnDel} ${styles.btn}`} name="button">{title}</button>
+      className={` zcJBtn btnDel btn`} name="button">{title}</button>
   )
 }
 //时间按钮
@@ -51,7 +51,7 @@ const ZcTimeBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnTime} ${styles.btn}`} name="button">{title}</button>
+      className={` zcJBtn btnTime btn `} name="button">{title}</button>
   )
 }
 //编辑按钮
@@ -63,7 +63,7 @@ const ZcEditBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnEdit} ${styles.btn}`} name="button">{title}</button>
+      className={` zcJBtn btnEdit btn `} name="button">{title}</button>
   )
 }
 //取消按钮
@@ -75,7 +75,7 @@ const ZcCancleBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnCancle} ${styles.btn}`} name="button">{title}</button>
+      className={`zcJBtn btnCancle btn`} name="button">{title}</button>
   )
 }
 //启用按钮
@@ -87,7 +87,7 @@ const ZcOpenBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnOpen} ${styles.btn}`} name="button">{title}</button>
+      className={`zcJBtn btnOpen btn`} name="button">{title}</button>
   )
 }
 //停用按钮
@@ -99,7 +99,7 @@ const ZcStopBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnStop} ${styles.btn}`} name="button">{title}</button>
+      className={`zcJBtn btnStop btn`} name="button">{title}</button>
   )
 }
 //转移按钮
@@ -111,7 +111,7 @@ const ZcMoveBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnMove} ${styles.btn}`} name="button">{title}</button>
+      className={` zcJBtn btnMove btn `} name="button">{title}</button>
   )
 }
 //增加按钮
@@ -123,7 +123,7 @@ const ZcAddBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={`${styles.zcJBtn} ${styles.btnAdd} ${styles.btn}`} name="button">{title}</button>
+      className={` zcJBtn btnAdd btn`} name="button">{title}</button>
   )
 }
 
@@ -135,7 +135,7 @@ const ZcDownloadBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      className={styles.downloadBtn} name="button">{title}</button>
+      className={'downloadBtn'} name="button">{title}</button>
   )
 }
 

@@ -11,7 +11,7 @@ const onRoute = () => {
   ))
 }
 const Main = () => (
-  <div className={styles.main}>
+  <div className={'main'}>
     <Switch>
       <Route exact path="/" component={ZcIndex} />
       {onRoute()}

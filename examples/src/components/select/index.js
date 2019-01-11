@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { ZcSelect } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 export default () => {
   const list = [
@@ -47,18 +47,30 @@ export default () => {
     />
   `
   return (
-    <div>
-      <div className={styles.preview}>
-        <ZcSelect
-          width={330}
-          list={list}
-          multiple={true}
-          defaultValue={'选择你想所选'}
-          uuId='select'
-          handler={onSelectHandler}
-        ></ZcSelect>
+    <div className='container'>
+      <div className='preview'>
+        <div className='box'>
+          <ZcSelect
+            width={330}
+            list={list}
+            multiple={true}
+            defaultValue={'选择你想所选'}
+            uuId='select'
+            handler={onSelectHandler}
+          ></ZcSelect>
+        </div>
+        <div className='box'>
+          <ZcSelect
+            width={330}
+            list={list}
+            multiple={false}
+            defaultValue={'选择你想所选'}
+            uuId='select'
+            handler={onSelectHandler}
+          ></ZcSelect>
+        </div>
       </div>
-      <div className={styles.codeBox}>
+      <div className='codeBox'>
         <ReactMarkdown source={md} />
       </div>
     </div>

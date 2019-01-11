@@ -112,10 +112,10 @@ export default class FidlesLayer extends PureComponent {
     const { data } = this.props;
     const defaultValue = data.filter(item => item.checked).map(item => item.value);
     return (
-      <div className={styles.wrap}>
+      <div className={'checkBoxLayer'}>
         <ZcBtn title={'自定义字段'} handler={this.onFields}></ZcBtn>
         {
-          show ? <div className={styles.layer}>
+          show ? <div className={'layer'}>
             {
               mutex ?
                 <Spin spinning={loading}>
@@ -127,10 +127,10 @@ export default class FidlesLayer extends PureComponent {
                 </Spin>
                 : ''
             }
-            <div className={styles.footer}>
+            <div className={'footer'}>
               <ZcBtn title={'确定'} type="o" handler={this.onEnsure} />
               <ZcTextBtn title={'取消'} handler={this.onCancle} />
-              <span className={styles.defaultBtn} onClick={this.onDefault}>恢复默认</span>
+              <span className={'defaultBtn'} onClick={this.onDefault}>恢复默认</span>
             </div>
           </div> : ''
         }

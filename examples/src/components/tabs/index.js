@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { ZcTabs } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 const onTab = (tab) => (
   <div className={styles.content}>{`这是tab${tab}的内容`}</div>
@@ -46,15 +46,15 @@ export default () => {
     />
   `
   return (
-    <div>
-      <div className={styles.preview}>
+    <div className='container'>
+      <div className='preview'>
         <ZcTabs
           items={items}
           uuId='tabs'
           handler={onChange}
         />
       </div>
-      <div className={styles.codeBox}>
+      <div className='codeBox'>
         <ReactMarkdown source={md} />
       </div>
     </div>

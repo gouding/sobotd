@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { ZcTable } from '../../../../src';
-import styles from './index.less'
+import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 export default class ZTable extends PureComponent {
   state = {
@@ -221,8 +221,8 @@ export default class ZTable extends PureComponent {
       />
     `
     return (
-      <div>
-        <div className={styles.preview}>
+      <div className='container'>
+        <div className='preview'>
           <ZcTable
             columns={columns}
             data={currentData}
@@ -236,7 +236,7 @@ export default class ZTable extends PureComponent {
             pageSize={pageSize}
           />
         </div>
-        <div className={styles.codeBox}>
+        <div className='codeBox'>
           <ReactMarkdown source={md} />
         </div>
       </div>

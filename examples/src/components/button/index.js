@@ -1,7 +1,7 @@
 import { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn } from '../../../../src';
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
-import styles from './index.less'
+import styles from '../components.less'
 const onTouch = (e) => {
   alert(e.target.textContent);
 }
@@ -42,9 +42,8 @@ const BtnDemo = (props) => {
   `;
 
   return (
-    <div className={styles.wrap}>
-      <span className={styles.title}>Button按钮 示例</span>
-      <div className={styles.tempBox}>
+    <div className={'container'}>
+      <div className={'preview btn'}>
         <ZcBtn type='o' size='small' title='一般按钮' handler={onTouch} />
         <ZcBtn title='一般按钮' handler={onTouch} />
         <ZcDelBtn title='删除按钮' handler={onTouch} />
@@ -58,7 +57,7 @@ const BtnDemo = (props) => {
         <ZcTextBtn title='取消按钮' handler={onTouch} />
         <ZcDownloadBtn title='导出按钮' handler={onTouch} />
       </div>
-      <div className={styles.codeBox}>
+      <div className={'codeBox'}>
         <ReactMarkdown source={md} />
       </div>
     </div>

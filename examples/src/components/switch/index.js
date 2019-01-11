@@ -1,7 +1,7 @@
 import React from 'react'
 import { ZcSwitch } from '../../../../src'
 import ReactMarkdown from 'react-markdown'
-import styles from './index.less'
+import styles from '../components.less'
 
 export default function () {
   const onSwitch = ({ uuId, data }) => {
@@ -19,8 +19,8 @@ export default function () {
   />
   `
   return (
-    <div>
-      <div className={styles.preview}>
+    <div className='container'>
+      <div className='preview'>
         <ZcSwitch
           size='small'
           tips={['1', '0']}
@@ -40,7 +40,7 @@ export default function () {
           defaultChecked={true}
         />
       </div>
-      <div className={styles.codeBox}>
+      <div className='codeBox'>
         <ReactMarkdown source={md} />
       </div>
     </div>

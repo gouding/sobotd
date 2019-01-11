@@ -1,7 +1,7 @@
 import React from 'react'
 import { ZcRadio } from '../../../../src'
 import ReactMarkdown from 'react-markdown'
-import styles from './index.less'
+import styles from '../components.less'
 
 
 const onChecked = ({ uuId, data }) => {
@@ -52,8 +52,8 @@ const ZRadio = () => {
   />
   `
   return (
-    <div>
-      <div className={styles.preview}>
+    <div className='container'>
+      <div className='preview'>
         <ZcRadio
           data={data}
           uuId='radio'
@@ -61,7 +61,7 @@ const ZRadio = () => {
           defaultValue={defaultValue}
         />
       </div>
-      <div className={styles.codeBox}>
+      <div className='codeBox'>
         <ReactMarkdown source={md} />
       </div>
     </div>
