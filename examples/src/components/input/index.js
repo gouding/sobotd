@@ -39,7 +39,7 @@ const InputDemo = () => (
       <ZcInput
         size='default'
         placeholder={'请输入'}
-        defaultValue=''
+        defaultValue='select内容'
         handler={onChange}
         style={{ color: 'red' }}
         disabled={false}
@@ -55,7 +55,7 @@ const InputDemo = () => (
         <ZcInput
           size='default'
           placeholder={'请输入'}
-          defaultValue={'2'}
+          defaultValue='hello'
           handler={onChange}
           style={{ color: 'red' }}
           disabled={false}
@@ -71,7 +71,7 @@ const InputDemo = () => (
         <ZcInput
           size='default'
           placeholder={'请输入'}
-          defaultValue={'2'}
+          defaultValue='9999'
           handler={onChange}
           disabled={false}
           uuId={'id3'}
@@ -84,7 +84,6 @@ const InputDemo = () => (
         <ZcInput
           size='default'
           placeholder={'请输入'}
-          defaultValue={'2'}
           handler={onChange}
           disabled={true}
           uuId={'id4'}
@@ -97,7 +96,7 @@ const InputDemo = () => (
         <ZcInput
           size='default'
           placeholder={'请输入'}
-          defaultValue=''
+          defaultValue='textarea内容'
           handler={onChange}
           disabled={false}
           uuId={'id4'}

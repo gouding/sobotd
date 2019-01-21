@@ -66,7 +66,7 @@ export default class ZInput extends PureComponent {
         placeholder={placeholder}
         defaultValue={defaultValue}
         onChange={this.onChange}
-        value={val}
+        // value={val}
         maxLength={length}
         onBlur={this.onBlur}
         onFocus={this.onFocus}

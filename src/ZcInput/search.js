@@ -3,7 +3,7 @@ import { Input } from 'antd'
 const Search = Input.Search;
 export default function (props) {
   const { data } = props;
-  const { enterButton, placeholder, size, handler, uuId, width, style, modify } = data
+  const { enterButton, placeholder, size, handler, uuId, width, style, modify,defaultValue } = data
   const onStyles = () => {
     if (modify === 'success')
       return {
@@ -31,6 +31,7 @@ export default function (props) {
         placeholder={placeholder}
         onSearch={onSearch}
         enterButton={enterButton}
+        defaultValue={defaultValue}
         style={onStyles()}
       />
     </div>

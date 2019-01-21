@@ -19,7 +19,6 @@ export default class ZSelect extends PureComponent {
     handler && handler({ uuId, data: { inputValue, item } });
   }
   onSelectChange = (data, ret) => {
-    console.log(ret.props)
     const { props } = ret;
     const item = { name: props.children, value: props.value };
     this.setState({

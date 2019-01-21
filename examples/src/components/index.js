@@ -35,6 +35,9 @@ export default class ZIndex extends PureComponent {
         <div style={box}>
           <Timeline>
             <Timeline.Item>
+              2019-01-21 sobotd v1.2.3 修复Input组件设置默认值（defaultValue）不生效的bug
+            </Timeline.Item>
+            <Timeline.Item>
             2019-01-11 sobotd v1.2.2 修复组件加载不了内部的less文件，采用loader加载为module:true的模式，在第三方引用时，不能正常加载样式名，
             即使用正常的样式加载即可
             </Timeline.Item>
