@@ -218,6 +218,8 @@ export default class ZTable extends PureComponent {
         size="middle" //表格的大小  middle 或 small
         total={total} //总数据条数
         pageSize={pageSize} //每页显示的条数
+        paginationFlag = true  //是否显示分页控件  false 不显示  默认显示
+        destroyOnClose = false //关闭时销毁 Modal 里的子元素
       />
     `
     return (

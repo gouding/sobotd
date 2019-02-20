@@ -15,6 +15,7 @@ export default (props) => {
     total,
     pageSize = 15,
     hideOnSinglePage,
+    paginationFlag = true,
   } = props;
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
@@ -43,17 +44,19 @@ export default (props) => {
     <div>
       <LocaleProvider locale={zhCN}>
         <div className={'zc-scroll-bar'}>
-          <Table {...params} />
-          <div className={'pagination'}>
-            <Pagination
-              showQuickJumper
-              hideOnSinglePage={hideOnSinglePage}
-              defaultCurrent={1}
-              defaultPageSize={pageSize}
-              total={total}
-              onChange={onPageChange}
-            />
-          </div>
+          <Table {...params} className={'table'} />
+          {
+            paginationFlag ? <div className={'pagination'}>
+              <Pagination
+                showQuickJumper
+                hideOnSinglePage={hideOnSinglePage}
+                defaultCurrent={1}
+                defaultPageSize={pageSize}
+                total={total}
+                onChange={onPageChange}
+              />
+            </div> : ''
+          }
         </div>
       </LocaleProvider>
     </div>
