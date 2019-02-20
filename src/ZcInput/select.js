@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Input, Select } from 'antd'
+import { Input, Select, } from 'antd'
 const InputGroup = Input.Group;
 const Option = Select.Option;
 
@@ -44,7 +44,7 @@ export default class ZSelect extends PureComponent {
   render() {
     const { data } = this.props;
     const {
-      options = [{ name: '小丁哥', value: '001' }, { name: '小板凳', value: '002' }],
+      options,
       width,
       defaultValue,
       placeholder,

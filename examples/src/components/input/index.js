@@ -26,6 +26,7 @@ const md =
       length={10}     //输入框可输入字符长度
       status="select" //输入框的当前渲染方式 默认为input   一共四种模式  即  input select textarea search
       enterButton='123' //当status=search时生效， 按钮的文案，不设置默认为搜索icon
+      options={[{ name: '小丁哥', value: '001' }, { name: '小板凳', value: '002' }]}  //当status为“select”时的下拉框数据
       width={300} //输入框宽度
   />
 
@@ -50,6 +51,7 @@ const InputDemo = () => (
         status="select"
         enterButton='123'
         width={300}
+        options={[{ name: '小丁哥', value: '001' }, { name: '小板凳', value: '002' }]}
       ></ZcInput>
       <div style={{ marginTop: '20px' }}>
         <ZcInput
@@ -64,7 +66,21 @@ const InputDemo = () => (
           length={20}
           status="search"
           enterButton='搜索'
-          width={400}
+          width={200}
+        ></ZcInput>
+         <ZcInput
+          size='default'
+          placeholder={'请输入'}
+          defaultValue='hello'
+          handler={onChange}
+          style={{ color: 'red' }}
+          disabled={false}
+          uuId={'id2'}
+          modify='success'
+          length={20}
+          status="search"
+          enterButton='搜索'
+          width={200}
         ></ZcInput>
       </div>
       <div style={{ marginTop: '20px' }}>
