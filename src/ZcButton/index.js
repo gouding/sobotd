@@ -18,14 +18,14 @@ const ZcBtn = (props) => {
 //一般按钮
 const ZcTextBtn = (props) => {
   //type o 表示实心 有底色  默为是无底色
-  const { size = 'small', title = '取消', handler } = props;
+  const { size = 'small', title = '取消', handler, width = 'auto' } = props;
   const fn = e => {
     handler && handler(e);
   }
   return (
     <button type="button"
       onClick={fn}
-      style={{width:width}}
+      style={{ width: width }}
       className={`zcJBtn btnTextCancel ${size === 'small' ? 'small' : size === 'default' ? 'default' : 'large'}  `} name="button">{title}</button>
   )
 }
