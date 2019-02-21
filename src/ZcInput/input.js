@@ -56,7 +56,7 @@ export default class ZInput extends PureComponent {
   }
   render() {
     const {data}=this.props;
-    const { placeholder, defaultValue, length,size = "default", addonBefore, addonAfter, disabled = false } = data;
+    const { placeholder, defaultValue, length,size = "default", addonBefore, addonAfter, disabled = false ,type,} = data;
     const { val } = this.state;
     return (
       <Input
@@ -66,6 +66,7 @@ export default class ZInput extends PureComponent {
         placeholder={placeholder}
         defaultValue={defaultValue}
         onChange={this.onChange}
+        type={type}
         // value={val}
         maxLength={length}
         onBlur={this.onBlur}
