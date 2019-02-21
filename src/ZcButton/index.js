@@ -25,6 +25,7 @@ const ZcTextBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
+      style={{width:width}}
       className={`zcJBtn btnTextCancel ${size === 'small' ? 'small' : size === 'default' ? 'default' : 'large'}  `} name="button">{title}</button>
   )
 }
