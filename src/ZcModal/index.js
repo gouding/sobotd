@@ -3,7 +3,7 @@ import zhCN from 'antd/lib/locale-provider/zh_CN';
 import { ZcBtn, ZcTextBtn, } from '../index'
 import React from 'react'
 export default (props) => {
-  const { visible, handler, title, children, okText = '确定', cancleText = '取消', width = 500, maskClosable = true,destroyOnClose=false, } = props;
+  const { visible, handler, title, children, okText = '确定', cancleText = '取消', width = 500, maskClosable = true, destroyOnClose = false, footerFlag = true, } = props;
   const handleOk = (e) => {
     handler && handler(e)
   }
@@ -19,10 +19,12 @@ export default (props) => {
         width={width}
         maskClosable={maskClosable}
         destroyOnClose={destroyOnClose}
-        footer={[
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={footerFlag ? [
           <ZcBtn title={okText} type='o' handler={handleOk} key={1} />,
           <ZcTextBtn title={cancleText} handler={handleCancel} key={2} />,
-        ]}
+        ] : null}
       >
         {children}
       </Modal>
