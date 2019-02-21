@@ -72,6 +72,7 @@ export default class ZModal extends PureComponent {
       maskClosable={true} //点击蒙层是否允许关闭
       okText='确定' //确定按钮文案
       cancleText='取消' //取消按钮文案
+      footerFlag={true} //是否显示底部的按钮
       handler={this.onModalChange}  //点击按钮后的回调
     >
       <div>这是子组件</div>
