@@ -73,6 +73,7 @@ export default class ZModal extends PureComponent {
       okText='确定' //确定按钮文案
       cancleText='取消' //取消按钮文案
       footerFlag={true} //是否显示底部的按钮
+      closable={true} //是否显示右上角的关闭按钮
       handler={this.onModalChange}  //点击按钮后的回调
     >
       <div>这是子组件</div>

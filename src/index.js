@@ -11,6 +11,7 @@ import {
   ZcCancleBtn,
   ZcTextBtn,
   ZcDownloadBtn,
+  ZcUploadBtn,
 } from './ZcButton';
 //zcinput
 import ZcInput from './ZcInput'
@@ -59,4 +60,5 @@ export {
   ZcTable,
   ZcSelect,
   ZcDateTime,
+  ZcUploadBtn,
 }

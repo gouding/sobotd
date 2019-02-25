@@ -1,4 +1,4 @@
-import { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn } from '../../../../src';
+import { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn,ZcUploadBtn, } from '../../../../src';
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
 import styles from '../components.less'
@@ -56,6 +56,7 @@ const BtnDemo = (props) => {
         <ZcCancleBtn title='删除按钮' handler={onTouch} />
         <ZcTextBtn title='取消按钮' handler={onTouch} />
         <ZcDownloadBtn title='导出按钮' handler={onTouch} />
+        <ZcUploadBtn title='导入按钮' handler={onTouch} />
       </div>
       <div className={'codeBox'}>
         <ReactMarkdown source={md} />

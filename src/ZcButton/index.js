@@ -25,7 +25,7 @@ const ZcTextBtn = (props) => {
   return (
     <button type="button"
       onClick={fn}
-      style={{ width: width }}
+      style={{ minWidth: width }}
       className={`zcJBtn btnTextCancel ${size === 'small' ? 'small' : size === 'default' ? 'default' : 'large'}  `} name="button">{title}</button>
   )
 }
@@ -140,6 +140,18 @@ const ZcDownloadBtn = (props) => {
   )
 }
 
+const ZcUploadBtn = (props) => {
+  const { title = '上传', handler } = props;
+  const fn = e => {
+    handler && handler(e);
+  }
+  return (
+    <button type="button"
+      onClick={fn}
+      className={'uploadBtn'} name="button">{title}</button>
+  )
+}
 
 
-export { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn };
+
+export { ZcBtn, ZcDelBtn, ZcTimeBtn, ZcEditBtn, ZcMoveBtn, ZcOpenBtn, ZcAddBtn, ZcStopBtn, ZcCancleBtn, ZcTextBtn, ZcDownloadBtn,ZcUploadBtn };
