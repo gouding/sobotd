@@ -28,11 +28,11 @@ export default () => {
     const items = [
       {
         name: 'Tab1',
-        content: onTab(1),  //注意：content的值必须为一个组件才可以！
+        content: onTab,  //注意：content的值必须为一个组件才可以！
       },
       {
         name: 'Tab2',
-        content: onTab(2),
+        content: onTab,
       },
     ]
     const onChange =(e)=>{
