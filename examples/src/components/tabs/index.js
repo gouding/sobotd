@@ -3,17 +3,17 @@ import { ZcTabs } from '../../../../src';
 import styles from '../components.less'
 import ReactMarkdown from 'react-markdown'
 const onTab = (tab) => (
-  <div className={styles.content}>{`这是tab${tab}的内容`}</div>
+  <div className={styles.content}>{`这是tab的内容`}</div>
 )
 export default () => {
   const items = [
     {
       name: 'Tab1',
-      content: onTab(1),
+      content: onTab,
     },
     {
       name: 'Tab2',
-      content: onTab(2),
+      content: onTab,
     },
   ]
   const onChange = (e) => {
