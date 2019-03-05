@@ -5,11 +5,11 @@ import React from 'react'
 export default (props) => {
   const { visible, handler, title, children, okText = '确定', cancleText = '取消', width = 500, maskClosable = true, destroyOnClose = false, footerFlag = true, closable = true, } = props;
   const handleOk = (e) => {
-    handler && handler(e)
+    handler && handler(e,true)
   }
 
   const handleCancel = (e) => {
-    handler && handler(e)
+    handler && handler(e,false)
   }
   return (
     <LocaleProvider locale={zhCN}>
