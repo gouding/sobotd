@@ -16,12 +16,14 @@ export default (props) => {
     pageSize = 15,
     hideOnSinglePage,
     paginationFlag = true,
+    type = 'checkbox',
   } = props;
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
       const data = selectedRows;
       checkHandler && checkHandler({ uuId, data });
     },
+    type,
   };
   const onPageChange = (page) => {
     jumpToHandler && jumpToHandler({ uuId, data: page });

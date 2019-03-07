@@ -217,6 +217,7 @@ export default class ZTable extends PureComponent {
         multiFlag={true}  //表格是否支持可多选
         size="middle" //表格的大小  middle 或 small
         total={total} //总数据条数
+        type="radio" //checkbox or radio
         pageSize={pageSize} //每页显示的条数
         paginationFlag = true  //是否显示分页控件  false 不显示  默认显示
         destroyOnClose = false //关闭时销毁 Modal 里的子元素
@@ -234,6 +235,7 @@ export default class ZTable extends PureComponent {
             rowSelectHandler={this.onRowSelectHandler}
             multiFlag={true}
             size="middle"
+            type="radio"
             total={total}
             pageSize={pageSize}
           />
