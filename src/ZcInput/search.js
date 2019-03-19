@@ -25,7 +25,7 @@ export default function (props) {
     handler && handler({ uuId, data })
   }
   return (
-    <div>
+    <div style={{verticalAlign:'middle'}}>
       <Search
         size={size}
         placeholder={placeholder}
