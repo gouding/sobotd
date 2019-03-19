@@ -20,7 +20,7 @@ const ZcInput = (props) => {
     }
   }
   return (
-    <div style={{ display: 'inline-block' }}>
+    <div style={{ display: 'inline-block', verticalAlign: 'middle' }}>
       {onSwitch()}
     </div>
   )
