@@ -86,11 +86,12 @@ const InputDemo = () => (
       <div style={{ marginTop: '20px' }}>
         <ZcInput
           size='default'
-          placeholder={'请输入'}
+          placeholder={'请输入数字'}
           defaultValue='9999'
           handler={onChange}
           disabled={false}
           uuId={'id3'}
+          type='number'
           modify='success'
           length={20}
           width={400}

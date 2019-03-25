@@ -17,6 +17,7 @@ export default (props) => {
     hideOnSinglePage,
     paginationFlag = true,
     type = 'checkbox',
+    scrollFlag=true,
   } = props;
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
@@ -45,7 +46,7 @@ export default (props) => {
   return (
     <div>
       <LocaleProvider locale={zhCN}>
-        <div className={'zc-scroll-bar'}>
+        <div className={scrollFlag?'zc-scroll-bar':''}>
           <Table {...params} className={'table'} />
           {
             paginationFlag ? <div className={'pagination'}>

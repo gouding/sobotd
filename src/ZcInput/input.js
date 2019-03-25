@@ -30,11 +30,11 @@ export default class ZInput extends PureComponent {
     const {data}=this.props;
     const { handler = new Function(), uuId, type } = data;
     const { value } = e.target;
-    const reg = /^-?(0|[1-9][0-9]*)(\.[0-9]*)?$/;
+    const reg = /^-?(0|[1-9][0-9a-zA-Z]*)(\.[0-9a-zA-Z]*)?$/;
     let res = true;
     if (type === 'number') {
       res = false;
-      if ((!isNaN(value) && reg.test(value)) || value === '' || value === '-') {
+      if ((!isNaN(value) && reg.test(value)) || value === '' ) {
         res = true
       }
     }
