@@ -221,6 +221,7 @@ export default class ZTable extends PureComponent {
         pageSize={pageSize} //每页显示的条数
         paginationFlag = true  //是否显示分页控件  false 不显示  默认显示
         destroyOnClose = false //关闭时销毁 Modal 里的子元素
+        scrollFlag=false   //是否支持滚动
       />
     `
     return (
