@@ -51,6 +51,7 @@ export default () => {
         <ZcTabs
           items={items}
           uuId='tabs'
+          type='card'
           handler={onChange}
         />
       </div>
