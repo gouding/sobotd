@@ -6,11 +6,13 @@ import React from 'react'
 export default (props) => {
   const { visible, handler, title, children, okText = '确定', cancleText = '取消', width = 500, maskClosable = true, destroyOnClose = false, footerFlag = true, closable = true, } = props;
   const handleOk = (e) => {
-    handler && handler(e,true)
+    handler && handler(e, true)
   }
-
+  message.config({
+    maxCount: 1
+  })
   const handleCancel = (e) => {
-    handler && handler(e,false)
+    handler && handler(e, false)
   }
   return (
     <LocaleProvider locale={zhCN}>
@@ -79,6 +81,8 @@ const ZcError = (props, cbk) => {
 const ZcAlert = (props, ) => {
   const { content, type } = props;
   message[`${type}`](content)
+  // setTimeout(()=>{
+  //   message.destroy();
+  // })
 }
-
 export { ZcError, ZcSuccess, ZcWarning, ZcAlert, }
