@@ -34,6 +34,9 @@ export default class ZIndex extends PureComponent {
         <p style={style}>当前时间：{current}</p>
         <div style={box}>
           <Timeline>
+          <Timeline.Item>
+              2019-05-05 sobotd v1.4.3 增加Select控制支持自定义 style 样式 
+            </Timeline.Item>
             <Timeline.Item>
               2019-01-21 sobotd v1.2.3 修复Input组件设置默认值（defaultValue）不生效的bug
             </Timeline.Item>

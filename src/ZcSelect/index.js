@@ -6,7 +6,7 @@ const Option = Select.Option;
 import './index.less'
 
 export default function (props) {
-  const { width, multiple = true, defaultValue = '请选择', handler, list = [{ name: '测试项', value: 1 }], uuId, parent, disabled = false } = props;
+  const { width, multiple = true, defaultValue = '请选择', handler, list = [{ name: '测试项', value: 1 }], uuId, parent, disabled = false, style, } = props;
   let children = [];
   for (let i = 0; i < list.length; i++) {
     const item = list[i];
@@ -38,7 +38,7 @@ export default function (props) {
         showSearch
         mode={multiple ? 'multiple' : ''}
         disabled={disabled}
-        style={{ width: width }}
+        style={{ width: width, ...style }}
         placeholder={defaultValue}
         defaultValue={multiple ? [] : [defaultValue]}
         onChange={handleChange}

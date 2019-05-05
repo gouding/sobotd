@@ -52,6 +52,7 @@ export default () => {
         <div className='box'>
           <ZcSelect
             width={330}
+            style={{border:'1px solid red'}}
             list={list}
             multiple={true}
             defaultValue={'选择你想所选'}
