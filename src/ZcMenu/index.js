@@ -4,7 +4,7 @@ import './index.less'
 
 const { SubMenu } = Menu;
 export default (props) => {
-  let { title, menus = [], handler } = props
+  let { title, menus = [], handler, Link } = props
   // menus = [
   //   {
   //     id: '0',
@@ -90,7 +90,11 @@ export default (props) => {
     return (
       <Menu.ItemGroup key={id} title={name}>
         {
-          items.map(item => <Menu.Item key={item.id}>{item.name}</Menu.Item>)
+          items.map(item => <Menu.Item key={item.id}>
+            <Link to={item.path}>
+              {item.name}
+            </Link>
+          </Menu.Item>)
         }
       </Menu.ItemGroup>
     )
@@ -109,7 +113,11 @@ export default (props) => {
               //有分组
               return onGroupMenu(item)
             } else {
-              return <Menu.Item key={item.id} >{item.name}</Menu.Item>
+              return <Menu.Item key={item.id} >
+                <Link to={item.path}>
+                  {item.name}
+                </Link>
+              </Menu.Item>
             }
           })
         }
@@ -122,7 +130,11 @@ export default (props) => {
       if (item.subFlag) {
         return onSubMenu(item)
       } else {
-        return <Menu.Item key={item.id}>{item.name}</Menu.Item>
+        return <Menu.Item key={item.id}>
+          <Link to={item.path}>
+            {item.name}
+          </Link>
+        </Menu.Item>
       }
     })
   }
@@ -131,7 +143,7 @@ export default (props) => {
     console.log(e)
   }
   return (
-    <>
+    <div>
       <div className="menu-title">{title}</div>
       <Menu
         onClick={handleClick}
@@ -143,7 +155,7 @@ export default (props) => {
       >
         {onMenu()}
       </Menu>
-    </>
+    </div>
   )
 }
 
