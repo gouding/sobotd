@@ -1,0 +1,49 @@
+:global {
+  .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+    overflow: hidden;
+  }
+  .ant-table-fixed-header>.ant-table-content>.ant-table-scroll>.ant-table-body {
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color: #F5F7FA;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 6px;
+      background-color: #e0e8eb;
+      border-radius: 3px;
+      height: 6px;
+    }
+  }
+  .ant-table-thead > tr > th{
+    background: #EFF3FA;
+  }
+}
+
+.bar {
+  overflow-y: hidden;
+}
+
+.table {
+  table {
+    thead {
+      th {
+        background: #EFF3FA;
+        color: #3D4966;
+      }
+    }
+    tbody {
+      td {
+        color: #3D4966;
+        a {
+          color: #4D9DFE;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  text-align: right;
+  margin: 20px 0;
+}
