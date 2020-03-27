@@ -38,6 +38,8 @@ import ZcTable from './ZcTable'
 import ZcSelect from './ZcSelect'
 //ZcDateTime
 import ZcDateTime from './ZcDateTime'
+
+import ZcMenu from './ZcMenu'
 export {
   ZcBtn,
   ZcDelBtn,
@@ -61,4 +63,5 @@ export {
   ZcSelect,
   ZcDateTime,
   ZcUploadBtn,
+  ZcMenu,
 }

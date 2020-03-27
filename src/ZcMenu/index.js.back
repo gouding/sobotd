@@ -1,0 +1,135 @@
+import React from 'react'
+import './index.less'
+
+export default () => {
+
+  const menus = [
+    {
+      id: '01',
+      name: '统计',
+      childrenFlag: true,
+      items: [
+        {
+          id: '0101',
+          name: '坐席统计',
+          checked: true,
+          path: '/',
+        }, {
+          id: '0102',
+          name: '服务总结统计',
+          checked: false,
+          path: '',
+        }, {
+          id: '0101',
+          name: 'IVR轨迹分析',
+          checked: false,
+          path: '',
+        }
+      ]
+    }, {
+      id: '02',
+      name: '呼叫中心',
+      childrenFlag: true,
+      items: [
+        {
+          id: '0201',
+          name: '未接电话',
+          checked: false,
+        }, {
+          id: '0202',
+          name: '联系计划',
+          checked: false,
+          path: '',
+        }, {
+          id: '0203',
+          name: 'IVR设置',
+          subFlag: true,
+          items: [{
+            id: '020301',
+            name: '基础设置',
+            checkd: false,
+            path: '',
+          }, {
+            id: '020302',
+            name: 'IVR流程设置',
+            checkd: false,
+            path: '',
+          }, {
+            id: '020303',
+            name: '自定义语音库',
+            checkd: false,
+            path: '',
+          }]
+        }
+      ]
+    }
+  ]
+  return (
+    <>
+      <div className="menu-container">
+        <div className="logo-area"></div>
+        <div className="menu-area">
+          <h3>呼叫系统</h3>
+          <ul className="menu-items">
+            <li className="menu-item">
+              <span className="title">
+                统计
+            </span>
+              <i className="menu-arrow"></i>
+              <ul className="items-child">
+                <li className="item-child active">
+                  <span>坐席统计</span>
+                </li>
+                <li className="item-child">
+                  <span>服务总结统计</span>
+                </li>
+                <li className="item-child">
+                  <span>通话记录</span>
+                </li>
+              </ul>
+            </li>
+            <li className="menu-item">
+              <span className="title">
+                统计
+            </span>
+              <i className="menu-arrow"></i>
+              <ul className="items-child">
+                <li className="item-child active">
+                  <span>坐席统计</span>
+                </li>
+                <li className="item-child">
+                  <span>服务总结统计</span>
+                </li>
+                <li className="item-child">
+                  <span>通话记录</span>
+                </li>
+              </ul>
+            </li>
+            <li className="menu-item">
+              <span className="title">
+                统计
+            </span>
+              <i className="menu-arrow"></i>
+              <ul className="items-child">
+                <li className="item-child active">
+                  <span>坐席统计</span>
+                </li>
+                <li className="item-child">
+                  <span>服务总结统计</span>
+                </li>
+                <li className="item-sub">
+                  <span>通话记录</span>
+                  <ul>
+                    <li>
+                      
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
+  )
+}

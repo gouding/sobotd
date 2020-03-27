@@ -9,6 +9,7 @@ import ZcTabs from '../components/tabs'
 import ZcTable from '../components/table'
 import ZcSelect from '../components/select'
 import ZcDateTime from '../components/datetime'
+import ZcMenu from '../components/menu'
 export default [
   { name: 'Button 按钮', id: '001', path: '/button', active: false, component: ZcButton, },
   { name: 'Input 输入框', id: '002', path: '/input', active: false, component: ZcInput },
@@ -21,4 +22,5 @@ export default [
   { name: 'Tabs 标签页', id: '009', path: '/tabs', active: false, component: ZcTabs },
   { name: 'Table 表格', id: '010', path: '/table', active: false, component: ZcTable },
   { name: 'DateTime 日期选择器', id: '011', path: '/datetime', active: false, component: ZcDateTime },
+  { name: '菜单', id: '012', path: '/menu', active: false, component: ZcMenu },
 ]
