@@ -6,7 +6,8 @@ export default () => {
       id: '0',
       name: '机器人管理',
       path: '/menu/1',
-    }, {
+    },
+    {
       id: '1',
       name: '统计',
       subFlag: true,
@@ -71,14 +72,20 @@ export default () => {
       ]
     }
   ]
-  const handler = (data) => {
-    console.log(data)
+  const handler = {
+    click: data => {
+      console.log(data)
+    }
+  }
+  const payload = {
+    title: '系统名称',
+    menus,
+    handler
   }
   return (
     <ZcMenu
       title="系统名称"
-      menus={menus}
-      handler={handler}
+      {...payload}
     />
   )
 }

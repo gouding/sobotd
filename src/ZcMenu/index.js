@@ -6,7 +6,6 @@ const { SubMenu } = Menu;
 export default (props) => {
   let { title, menus = [], handler } = props
 
-
   //分组菜单
   const onGroupMenu = (data) => {
     const { items, id, name } = data
@@ -62,7 +61,7 @@ export default (props) => {
     })
   }
   const handleClick = (e) => {
-    handler && handler(e)
+    handler && handler.click && handler.click(e)
   }
   return (
     <div>
