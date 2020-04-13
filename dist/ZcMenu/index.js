@@ -79,7 +79,7 @@ var _default = function _default(props) {
   };
 
   var handleClick = function handleClick(e) {
-    handler && handler(e);
+    handler && handler.click && handler.click(e);
   };
 
   return _react.default.createElement("div", null, _react.default.createElement("div", {
